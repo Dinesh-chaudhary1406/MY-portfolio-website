@@ -70,7 +70,7 @@ section{
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(Image/bg.jpg);
+    background-image: url(Image/bg1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -287,10 +287,10 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 9px;
 }
 
-.skills .content .col-right .br .info span{
+.skills .content .col-right .br .info .line span{
     font-size: 18px;
     font-weight: 500;
 }
@@ -303,7 +303,7 @@ section{
     border-radius: 2px;
 }
 
-.skills .content .col-right .bar .line::before{
+.skills .content .col-right .bar ::before{
     content: "";
     position: absolute;
     height: 100%;
@@ -313,7 +313,7 @@ section{
 }
 
 .skills .content .col-right .bar .html::before{
-    width: 95%;
+    width: 90%;
     background-color: #e45126;
 }
 
@@ -328,17 +328,25 @@ section{
 }
 
 .skills .content .col-right .bar .python::before{
-    width: 85%;
+    width: 90%;
     background-color: blue;
 }
 
 .skills .content .col-right .bar .php::before{
-    width: 65%;
+    width: 90%;
     background-color: #6d7eb8;
 }
+.project-title {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #c1eeedfb; /* Change color if background is dark */
+  }
+  
 
 /* Services */
-
+/* 
 .services .content{
     display: flex;
     justify-content: center;
@@ -397,7 +405,7 @@ section{
 {
     transform: translateY(-10px);
     color: white;
-}
+} */
 
 /* Work */
 
@@ -482,6 +490,11 @@ section{
   .contact .content .row .card:hover .contact-icon{
     transform: translateY(-10px);
   }
+  .card .info span {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all; /* optional if nothing else works */
+  }
   
   .contact .content .row .card .info{
     text-align: center;
@@ -521,6 +534,15 @@ section{
     width: 100%;
     margin-bottom: 20px;
   }
+  .info a {
+    display: inline-block;
+    color: #07050786; /* or your theme color */
+    text-decoration: none;
+    word-break: break-word; /* breaks long words */
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+  
   
   .contact-form .input-box input,
   .contact-form .input-box textarea{
